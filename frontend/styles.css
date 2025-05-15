@@ -1,0 +1,112 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f8ee;
+  color: #333;
+}
+
+.container {
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+h1, h2 {
+  text-align: center;
+  color: #2e7d32;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 1.8rem;
+}
+
+h2 {
+  font-size: 1.6rem;
+  margin-top: 40px;
+}
+
+#status-container, #events-container {
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  padding: 20px;
+  border: 2px solid;
+  margin-bottom: 40px;
+}
+
+#golf-status {
+  border-color: #c8e6c9;
+}
+
+#events {
+  border-color: #c8e6c9;
+}
+
+#golf-status p, #events p {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.1rem;
+  padding: 12px 0;
+  border-bottom: 1px solid #eee;
+  margin: 0;
+}
+
+#golf-status p:last-child, #events p:last-child {
+  border-bottom: none;
+}
+
+.status {
+  font-weight: bold;
+  border-radius: 6px;
+  padding: 2px 8px;
+  white-space: nowrap;
+}
+
+.status-open {
+  color: #2e7d32;
+  background-color: #e8f5e9;
+}
+
+.status-closed {
+  color: #c62828;
+  background-color: #ffebee;
+}
+
+.loading {
+  text-align: center;
+  font-style: italic;
+  color: #888;
+}
+
+/* For events date small text */
+#events p small {
+  color: #555;
+  font-size: 0.9rem;
+  margin-left: 10px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  #golf-status p, #events p {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .status {
+    margin-top: 4px;
+  }
+}
